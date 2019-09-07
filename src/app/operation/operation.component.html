@@ -1,0 +1,15 @@
+<div class="block pt-4 justify-center flex">
+  <input [(ngModel)]="num1" style="outline: none" class="mr-2 border-solid border-red-500 border-b-2 rounded" type="text"> +
+  <input [(ngModel)]="num2" style="outline: none" class="ml-2 border-solid border-red-500 border-b-2 rounded" type="text">
+</div>
+<div class="block pt-5 justify-center flex">
+  <label for="operation">Operaciones: </label>
+  <select (change)="operar()" id="operation" style="outline: none" class="mr-2 border-solid border-red-500 border-b-2 rounded"
+          [(ngModel)]="operation">
+    <option value="sumar" selected>Sumar</option>
+    <option value="restar">Restar</option>
+    <option value="multiplicar">Multiplicar</option>
+    <option value="dividir">Dividir</option>
+  </select>
+</div>
+
